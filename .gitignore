@@ -109,3 +109,7 @@ geckodriver
 
 # PyCharm
 .idea/
+
+# file with my personal data :P
+login_page_data.json
+web_browser_driver.json
