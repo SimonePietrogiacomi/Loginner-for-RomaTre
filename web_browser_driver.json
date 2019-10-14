@@ -1,0 +1,4 @@
+{
+  "Chrome": "/path/to/folder/chromedriver",
+  "Firefox": "/path/to/folder/geckodriver"
+}
