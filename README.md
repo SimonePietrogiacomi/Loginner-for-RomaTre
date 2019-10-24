@@ -35,8 +35,16 @@ Per permettere a Selenium di aprire il browser e operare su esso è necessario i
 Dopo aver scaricato l'intero progetto e aver soddisfatto i requisiti, è necessario completare le seguenti operazioni all'interno dei relativi file di configurazione:
 
 - **start_login.sh**
-  Inserire all'interno della variabile `path_to_python_file` il percorso assoluto della cartella contenente il file `login_romatre_selenium.py`
+  In caso di sistema operativo Linux, inserire all'interno della variabile `path_to_python_file` il percorso assoluto della cartella contenente il file `login_romatre_selenium.py`
 - **login_page_data.json** 
   Inserire all'interno della variabile `username_value` l'username e all'interno di `password_value` la password. In questo modo sarebbe salvata in chiaro e chiunque abbia accesso al PC potrà vederla. Per evitare ciò è possibile inserirla ogni volta tramite una finestra che comparirà a schermo. Per scegliere questa strada lasciare vuoto il campo `password_value`, ovvero non inserire nessun carattere all'interno delle virgolette
 - **web_browser_driver.json**
   Inserire il path assoluto del driver che si vuole utilizzare. Lasciare gli altri invariati, ci penserà il programma a prendere quello corretto :)
+
+## Utilizzo
+
+Tramite il comando `python3 login_romatre_selenium.py` è possibile avviare il programma. Nel caso in cui si utilizzi Linux, si può avviare tramite `./start_login.sh`. È inoltre possibile avviare il programma all'accensione del PC dicendo al SO di eseguire `start_login.sh` al boot
+
+## Testing
+
+Attualmente è stato testato sul SO Linux Mint 19.2 Mate
