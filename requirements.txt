@@ -1,0 +1,6 @@
+setuptools
+selenium
+PySimpleGUI
+#os
+#json
+#logging

@@ -1,4 +1,5 @@
 {
-  "Chrome": "/path/to/folder/chromedriver",
-  "Firefox": "/path/to/folder/geckodriver"
+  "Firefox": "/absolute/path/to/geckodriver",
+  "Chrome": "/absolute/path/to/chromedriver",
+  "PhantomJS": "/absolute/path/to/phantomjs"
 }
