@@ -1,22 +1,16 @@
 # Loginner for RomaTre
 
+Tramite questo programma è possibile effettuare l'accesso alla rete WiFi di Roma Tre senza dover manualmente aprire il browser e inserire i dati
+
 ## Requisiti
 
-### Per i soli utenti Linux
+Il requisito fondamentale e comune a tutti i sistemi operativi è Python 3, di seguito vengono indicati i successivi
 
-Per poter utilizzare TKinter e inserire la password da una finestra
+### Linux
 
-`$ sudo apt install python3-tk`
+`$ sudo apt install python3-tk fontconfig notify-osd`
 
-Per poter utilizzare PhantomJS, ovvero un browser headless
-
-`$ sudo apt install fontconfig`
-
-Per visualizzare una notifica sul DE in caso di successo
-
-`$ sudo apt install notify-osd`
-
-### Per tutti quanti
+### Linux, Windows e Mac
 
 Download dei requisiti per Python
 
@@ -34,17 +28,24 @@ Per permettere a Selenium di aprire il browser e operare su esso è necessario i
 
 Dopo aver scaricato l'intero progetto e aver soddisfatto i requisiti, è necessario completare le seguenti operazioni all'interno dei relativi file di configurazione:
 
-- **start_login.sh**
-  In caso di sistema operativo Linux, inserire all'interno della variabile `path_to_python_file` il percorso assoluto della cartella contenente il file `login_romatre_selenium.py`
 - **login_page_data.json** 
-  Inserire all'interno della variabile `username_value` l'username e all'interno di `password_value` la password. In questo modo sarebbe salvata in chiaro e chiunque abbia accesso al PC potrà vederla. Per evitare ciò è possibile inserirla ogni volta tramite una finestra che comparirà a schermo. Per scegliere questa strada lasciare vuoto il campo `password_value`, ovvero non inserire nessun carattere all'interno delle virgolette
+  Inserire all'interno della variabile `username_value` l'username e all'interno di `password_value` la password. Attenzione però al fatto che in questo modo verrebbe salvata in chiaro e chiunque abbia accesso al PC potrà vederla. Per evitare ciò è possibile inserirla ogni volta tramite una finestra che comparirà a schermo. Per scegliere questa strada lasciare vuoto il campo `password_value`, ovvero non inserire nessun carattere all'interno delle virgolette
 - **web_browser_driver.json**
   Inserire il path assoluto del driver che si vuole utilizzare. Lasciare gli altri invariati, ci penserà il programma a prendere quello corretto :)
 
 ## Utilizzo
 
-Tramite il comando `python3 login_romatre_selenium.py` è possibile avviare il programma. Nel caso in cui si utilizzi Linux, si può avviare tramite `./start_login.sh`. È inoltre possibile avviare il programma all'accensione del PC dicendo al SO di eseguire `start_login.sh` al boot
+Tramite il comando `python3 login_romatre_selenium.py` è possibile avviare il programma. 
+
+Nel caso in cui si utilizzi Linux, si può avviare tramite `./start_login.sh`. È inoltre possibile avviare il programma all'accensione del PC dicendo al SO di eseguire `start_login.sh` al boot
 
 ## Testing
 
 Attualmente è stato testato sul SO Linux Mint 19.2 Mate
+
+## TODO
+
+- Creare uno script d'avvio per Windows
+- Creare o testare uno script d'avvio per Mac
+- Testare l'applicativo su Windows e Mac
+- Aggiungere il supporto a Safari e, eventualmente, altri browser
