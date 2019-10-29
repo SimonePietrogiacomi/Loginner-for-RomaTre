@@ -4,7 +4,8 @@ ssid="Rm3Wi-Fi"
 # That's only for testing, it's the root of my home ssid :P
 # ssid="Telecom"
 
-path_to_python_file="/path/to/python/file"
+path_to_this_file=$(readlink -f $0)
+path_to_python_file=$(dirname $path_to_this_file)
 python_file_name="login_romatre_selenium.py"
 final_python_path="${path_to_python_file}/$python_file_name"
 
