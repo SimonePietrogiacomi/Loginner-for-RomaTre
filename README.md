@@ -37,7 +37,7 @@ Dopo aver scaricato l'intero progetto e aver soddisfatto i requisiti, è necessa
 
 Tramite il comando `python3 login_romatre_selenium.py` è possibile avviare il programma. 
 
-Nel caso in cui si utilizzi Linux, si può avviare tramite `./start_login.sh`. È inoltre possibile avviare il programma all'accensione del PC dicendo al SO di eseguire `start_login.sh` al boot
+Nel caso in cui si utilizzi Linux, si può avviare tramite `./start_login.sh`. È inoltre possibile avviare il programma all'accensione del PC eseguendo lo script appena citato appena finito il boot
 
 ## Testing
 
