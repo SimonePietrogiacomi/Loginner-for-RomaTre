@@ -18,7 +18,7 @@ Download dei requisiti per Python
 
 ##### Web browser driver
 
-Per permettere a Selenium di aprire il browser e operare su esso è necessario inserire i driver del relativo browser. Attualmente sono supportati Firefox, Chrome e PhantomJS. È importante scaricare i driver del browser che si ha installato sulla propria macchina. Nel caso in cui non compaia, scaricare i driver di PhantomJS
+Per permettere a Selenium di aprire il browser e operare su esso è necessario inserire i driver del relativo browser. Attualmente sono supportati Firefox, Chrome e PhantomJS. È importante **scaricare** ed **estrarre** i driver del browser che si ha installato sulla propria macchina. Nel caso in cui non compaia, scaricare i driver di PhantomJS
 
 - **Chrome**: [Chrome driver](https://chromedriver.chromium.org/downloads "Chrome driver") 
 - **Firefox**: [Firefox driver](https://github.com/mozilla/geckodriver/releases "Firefox driver")
