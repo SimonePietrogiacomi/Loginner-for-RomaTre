@@ -4,7 +4,7 @@ Tramite questo programma è possibile effettuare l'accesso alla rete WiFi di Rom
 
 ## Requisiti
 
-Il requisito fondamentale e comune a tutti i sistemi operativi è Python 3, di seguito vengono indicati i successivi
+Il requisito fondamentale e comune a tutti i sistemi operativi è `Python 3`, di seguito vengono indicati i successivi
 
 ### Linux
 
